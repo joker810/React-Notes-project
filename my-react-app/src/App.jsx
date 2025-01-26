@@ -35,7 +35,7 @@ function App() {
         <TransitionGroup>
       {notes.map((noteItem, index) => {
         return (
-          <Collapse key={noteItem}>
+          <Collapse key={noteItem.id || index}>
           <Note
             key={index}
             id={index}
